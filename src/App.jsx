@@ -8,10 +8,10 @@ import Portfolio from "./components/Portfolio";
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />  
-      <Route path="/portfolio" element={<Portfolio />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/contact" element={<Contact />} />
+      <Route path="/" element={<Home/>} />  
+      <Route path="/portfolio" element={<Portfolio/>} />
+      <Route path="/about" element={<About/>} />
+      <Route path="/contact" element={<Contact/>} />
     </Routes>
   );
 }

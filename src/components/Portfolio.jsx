@@ -58,7 +58,7 @@ const Portfolio = () => {
             {/* Project Card 1 */}
             <div className="bg-purple-950 bg-opacity-40 p-6 rounded-xl shadow-lg hover:shadow-yellow-400/40 transition transform hover:-translate-y-2">
               <img
-                src="images/computerrepair.jpeg"
+                src="src\assets\imgs\repair.jpeg"
                 alt="Computer & Mobile Repair"
                 className="w-full h-56 object-cover rounded-lg mb-4 transition-transform duration-300 hover:scale-105"
               />
@@ -74,7 +74,7 @@ const Portfolio = () => {
             {/* Project Card 2 */}
             <div className="bg-purple-950 bg-opacity-40 p-6 rounded-xl shadow-lg hover:shadow-yellow-400/40 transition transform hover:-translate-y-2">
               <img
-                src="images/1080p Cameras Installation Los Angeles.jpeg"
+                src="src\assets\imgs\Camerapic.jpeg"
                 alt="CCTV Installations"
                 className="w-full h-56 object-cover rounded-lg mb-4 transition-transform duration-300 hover:scale-105"
               />
@@ -90,7 +90,7 @@ const Portfolio = () => {
             {/* Project Card 3 */}
             <div className="bg-purple-950 bg-opacity-40 p-6 rounded-xl shadow-lg hover:shadow-yellow-400/40 transition transform hover:-translate-y-2">
               <img
-                src="images/electricfence.jpeg"
+                src="src\assets\imgs\fence.jpeg"
                 alt="Electric Fence Projects"
                 className="w-full h-56 object-cover rounded-lg mb-4 transition-transform duration-300 hover:scale-105"
               />
@@ -106,7 +106,7 @@ const Portfolio = () => {
             {/* Project Card 4 */}
             <div className="bg-purple-950 bg-opacity-40 p-6 rounded-xl shadow-lg hover:shadow-yellow-400/40 transition transform hover:-translate-y-2">
               <img
-                src="images/softwareproj.jpeg"
+                src="src\assets\imgs\programming.jpeg"
                 alt="Software Engineering Projects"
                 className="w-full h-56 object-cover rounded-lg mb-4 transition-transform duration-300 hover:scale-105"
               />

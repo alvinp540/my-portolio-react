@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function About() {
+function Contact() {
   return (
-    <div className="bg-gray-50 text-gray-900">
+    <div className="bg-gray-50">
       {/* Navbar */}
       <nav className="bg-purple-950 bg-opacity-70 shadow-md backdrop-blur-md sticky top-0 z-50">
         <div className="max-w-screen-xl mx-auto flex items-center justify-between p-4">
@@ -16,7 +16,7 @@ function About() {
             <span className="text-2xl font-semibold">Saritech</span>
           </Link>
 
-          {/* Nav Links */}
+          {/* Navigation Links */}
           <ul className="flex space-x-6 text-white font-medium">
             <li>
               <Link to="/" className="hover:text-yellow-300">
@@ -29,15 +29,15 @@ function About() {
               </Link>
             </li>
             <li>
-              <Link
-                to="/about"
-                className="hover:text-yellow-300 border-b-2 border-yellow-300 pb-1"
-              >
+              <Link to="/about" className="hover:text-yellow-300">
                 About
               </Link>
             </li>
             <li>
-              <Link to="/contact" className="hover:text-yellow-300">
+              <Link
+                to="/contact"
+                className="hover:text-yellow-300 border-b-2 border-yellow-300 pb-1"
+              >
                 Contact
               </Link>
             </li>
@@ -45,87 +45,134 @@ function About() {
         </div>
       </nav>
 
-      {/* About Section */}
+      {/* Contact Section */}
       <section className="bg-gradient-to-r from-purple-900 via-purple-800 to-purple-600 text-white py-20">
-        <div className="max-w-screen-lg mx-auto px-6">
-          <h2 className="text-4xl font-bold text-center mb-10">About Me</h2>
-
-          <div className="space-y-8 text-lg leading-relaxed text-gray-200">
-            <p>
-              I am{" "}
-              <span className="font-semibold text-yellow-400">
-                Alvin Sarisar
-              </span>
-              , an Electrical and Electronics Engineering student at{" "}
-              <span className="font-semibold text-yellow-400">
-                Jomo Kenyatta University of Agriculture and Technology (JKUAT)
-              </span>
-              . I have strong organizational skills and a passion for applying
-              technical knowledge to solve real-world problems.
+        <div className="max-w-screen-xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+          {/* Left Text paragraph */}
+          <div className="space-y-6 text-center md:text-left">
+            <h2 className="text-4xl font-extrabold">
+              Let us Create Something Amazing <br />
+              <span className="text-yellow-400">Together</span>
+            </h2>
+            <p className="text-white-200 text-lg">
+              I am open to collaborations, freelance work, and exciting
+              opportunities in software and engineering. Reach out — let us turn
+              your ideas into impactful solutions.
             </p>
+            <div className="flex justify-center md:justify-start space-x-6 text-4xl mt-6">
+              <a href="#" className="hover:text-yellow-400">
+                <i className="fab fa-facebook"></i>
+              </a>
+              <a
+                href="https://x.com/AlvinParsaloi"
+                className="hover:text-yellow-400"
+              >
+                <i className="fab fa-twitter"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/alvin_sarisar/"
+                className="hover:text-yellow-400"
+              >
+                <i className="fab fa-instagram"></i>
+              </a>
+              <a
+                href="https://github.com/alvinp540"
+                className="hover:text-yellow-400"
+              >
+                <i className="fab fa-github"></i>
+              </a>
+              <a
+                href="https://linkedin.com/in/alvin-parsaloi-311b08266"
+                className="hover:text-yellow-400"
+              >
+                <i className="fab fa-linkedin"></i>
+              </a>
+            </div>
+          </div>
 
-            <h3 className="text-2xl font-semibold text-yellow-400 mt-8">
-              Background
+          {/* Right Form */}
+          <div className="bg-purple-950 bg-opacity-40 p-8 rounded-2xl shadow-lg">
+            <h3 className="text-2xl font-semibold mb-6 text-yellow-400 text-center md:text-left">
+              Contact Me
             </h3>
-            <p>
-              I am a passionate{" "}
-              <span className="font-semibold">
-                Software Engineer in training
-              </span>{" "}
-              with a background in Electrical and Electronics Engineering. I
-              enjoy building responsive, user-friendly applications and
-              exploring innovative solutions at the intersection of hardware and
-              software. With skills in web development, troubleshooting, and
-              system installations, I aim to leverage technology to solve
-              real-world problems and create meaningful impact.
-            </p>
+            <form className="space-y-5">
+              <div>
+                <label
+                  htmlFor="name"
+                  className="block mb-2 text-sm font-medium"
+                >
+                  Name
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="Enter your name"
+                  required
+                  className="w-full p-3 rounded-lg bg-transparent border border-purple-400 text-white placeholder-gray-300 focus:ring-2 focus:ring-yellow-400 focus:outline-none transition"
+                />
+              </div>
 
-            <h3 className="text-2xl font-semibold text-yellow-400 mt-8">
-              Education
-            </h3>
-            <ul className="list-disc list-inside space-y-2">
-              <li>
-                <strong>JKUAT (2019 - Ongoing):</strong> BSc. Electrical &
-                Electronics Engineering
-              </li>
-              <li>
-                <strong>Maseno School (2015 - 2018):</strong> KCSE, Mean Grade
-                A- (78 pts)
-              </li>
-              <li>
-                <strong>JKUAT (2025 - Ongoing):</strong> Certificate in Software
-                Engineering
-              </li>
-            </ul>
+              <div>
+                <label
+                  htmlFor="email"
+                  className="block mb-2 text-sm font-medium"
+                >
+                  Email
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Enter your email"
+                  required
+                  className="w-full p-3 rounded-lg bg-transparent border border-purple-400 text-white placeholder-gray-300 focus:ring-2 focus:ring-yellow-400 focus:outline-none transition"
+                />
+              </div>
 
-            <h3 className="text-2xl font-semibold text-yellow-400 mt-8">
-              Skills
-            </h3>
-            <ul className="grid grid-cols-2 md:grid-cols-3 gap-3 list-disc list-inside">
-              <li>Mobile & Computer Repair</li>
-              <li>CCTV Installation & Maintenance</li>
-              <li>Electric Fence Installation</li>
-              <li>Burglar Alarm Systems</li>
-              <li>Problem Solving</li>
-              <li>Teamwork & Communication</li>
-            </ul>
+              <div>
+                <label
+                  htmlFor="message"
+                  className="block mb-2 text-sm font-medium"
+                >
+                  Message
+                </label>
+                <textarea
+                  id="message"
+                  rows="5"
+                  placeholder="Enter your message"
+                  required
+                  className="w-full p-3 rounded-lg bg-transparent border border-purple-400 text-white placeholder-gray-300 focus:ring-2 focus:ring-yellow-400 focus:outline-none transition"
+                ></textarea>
+              </div>
 
-            <h3 className="text-2xl font-semibold text-yellow-400 mt-8">
-              Certifications
-            </h3>
-            <ul className="list-disc list-inside space-y-2">
-              <li>
-                Certificate in Computer & Mobile Repair - Inceptor Institute of
-                Technology (2022)
-              </li>
-              <li>
-                Premier Electric Fencing Practitioner - Kenvision Techniks
-                (2022)
-              </li>
-              <li>
-                Premier CCTV Installation - Kenvision Techniks (2022)
-              </li>
-            </ul>
+              <button
+                type="submit"
+                className="w-full bg-yellow-400 text-purple-900 py-3 rounded-lg font-semibold hover:bg-white transition transform hover:scale-105"
+              >
+                Send Message
+              </button>
+            </form>
+
+            {/* Direct Contact Info */}
+            <div className="mt-8 text-center md:text-left text-sm text-gray-300">
+              <p>
+                <strong>Email:</strong>{" "}
+                <a
+                  href="mailto:alvinparsaloi@gmail.com"
+                  className="hover:text-yellow-400"
+                >
+                  alvinparsaloi@gmail.com
+                </a>
+              </p>
+              <p>
+                <strong>Phone:</strong>{" "}
+                <a
+                  href="tel:+254111980660"
+                  className="hover:text-yellow-400"
+                >
+                  +254 111 980 660
+                </a>
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -138,7 +185,7 @@ function About() {
             <h3 className="text-2xl font-bold text-yellow-400 mb-4">
               Alvin Sarisar
             </h3>
-            <p>Your Tech Expert - bridging hardware and software innovation.</p>
+            <p>Your Tech Expert — bridging hardware and software innovation.</p>
           </div>
 
           {/* Quick Links */}
@@ -212,4 +259,4 @@ function About() {
   );
 }
 
-export default About;
+export default Contact;

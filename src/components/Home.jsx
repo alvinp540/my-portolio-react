@@ -89,7 +89,7 @@ function Home() {
           <div className="mt-10 md:mt-0 md:w-1/3 flex justify-center">
             <Link to="/about">
               <img
-                src="/images/profile-pic.png"
+                src="src\assets\imgs\profile-pic.png"
                 alt="Profile Picture"
                 className="w-80 h-80 object-cover rounded-full border-4 border-yellow-400 shadow-3xl transition-transform duration-500 hover:scale-110 hover:shadow-yellow-500/100 hover:opacity-90"
               />
